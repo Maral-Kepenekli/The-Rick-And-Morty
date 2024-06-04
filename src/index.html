@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rick and Morty</title>
+
+    <!--Tailwind-->
+    <link href="../dist/output.css" rel="stylesheet">
+    <!--CSS stysheet-->
+    <link rel="stylesheet" href="./style.css">
+    <link href="../dist/output.css" rel="stylesheet">
+    <!--Roboto Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-sans font-bold">
+
+
+    <!--Navbar-->
+    <nav class="bg-white min-h-16 border-y-8 border-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse mx-auto">
+                <img id="svg-logo" class="absolute inset-0 h-10 w-10 ml-6 my-2" src="../assets/logo.svg"
+                    alt="Rick and Morty SVG" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500  focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+            </button>
+            <div class="hidden w-full items-center justify-center md:block md:w-auto mx-4" id="navbar-default">
+                <ul
+                    class="font-bold mt-4 flex flex-col items-center justify-center rounded-lg border   p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse  ">
+                    <li>
+                        <a href="#"
+                            class="nav-link relative block rounded  px-3 py-2 text-white hover:text-amber-500 md:bg-transparent md:p-0 md:text-gray-700 dark:text-white md:dark:text-white"
+                            aria-current="page">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="hover:text-amber-500 md:hover:text-amber-500 md:dark:hover:text-orange block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="font-bold mb-2 me-2 rounded-lg border border-yellow-400 px-5 py-2.5 mx-4 text-center text-sm text-gray-900 hover:bg-yellow-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:border-yellow-300 dark:text-yellow-300 dark:hover:bg-yellow-400 dark:hover:text-white dark:focus:ring-yellow-900">SUPPORT
+                            US</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Hero Section-->
+    <section class="pb-px w-full relative z-10">
+
+        <div class="relative flex justify-center items-center h-80">
+            <div class="relative z-10">
+                <h1 class="text-8xl font-extrabold text-center text-wrap leading-none pb-12 mb-12">The Rick and Morty
+                    API</h1>
+            </div>
+
+            <img id="" class="absolute h-80 w-auto fill-[#f5f5f5] opacity-5 z-0" src="../assets/hero-image.svg"
+                alt="Rick and Morty SVG" />
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--
+
+        
+    <section class="pb-px h-96 w-full relative z-10">
+
+        <figure class="relative flex justify-center items-center h-96">
+            <figcaption class="relative z-10">
+                <h1 class="text-8xl font-extrabold text-center text-wrap leading-none">The Rick and Morty API</h1>
+            </figcaption>
+
+            <img id="" class="absolute h-full w-auto fill-[#f5f5f5] opacity-5 z-0" src="../assets/hero-image.svg"
+                alt="Rick and Morty SVG" />
+
+
+        </figure>
+
+    </section>
+
+    -->
+    <section class="relative bg-gray-800 py-16 -mt-20 z-20">
+        <div id="character-container" class="container mx-auto py-4 flex flex-col justify-center items-center">
+            <div class="w-full h-60 md:w-1/2 lg:w-1/3 xl:w-1/4 p-3 mb-4">
+                <!-- Card Content -->
+            </div>
+
+            <div class="flex justify-center mt-4">
+                <button id="prev-button" class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Previous</button>
+                <button id="next-button" class="px-4 py-2 bg-blue-500 text-white rounded-lg">Next</button>
+            </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <footer class="footer bg-white text-black">
+        <div class="container text-center">
+            <p>&copy; 2024 Maral Kepenekli</p>
+            <p>
+                Find me on GitHub:
+                <a href="https://github.com/Maral-Kepenekli" target="_blank" rel="noopener noreferrer">
+                    Maral Kepenekli
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
