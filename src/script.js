@@ -17,23 +17,22 @@ async function fetchCharacters(page = 1) {
 function createCharacterCard(character) {
     const card = document.createElement('a');
     card.href = "#";
-    card.className = "flex flex-col items-center bg-gray-700 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 m-4 ";
+    card.className = "flex flex-col items-center bg-gray-700 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 m-4";
 
     card.innerHTML = `
-        <img class="object-cover md:rounded-none md:rounded-s-lg " " src="${character.image}" alt="${character.name}">
+        <img class="object-cover md:rounded-none md:rounded-s-lg" src="${character.image}" alt="${character.name}">
         <div class="flex flex-col justify-between p-4 leading-normal">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">${character.name}</h5>
             <p class="mb-3 font-normal text-white dark:text-gray-400">Status: ${character.status}</p>
-            <p class-"text-gray-400 font-medium">Last Known Location:</p>
-            <p class="mb-3 font-normal text-white dark:text-gray-400"> ${character.location.name}</p>
-            <p class-"text-gray-400 font-medium">First seen in:</p>
-            <p class="mb-3 font-normal text-white dark:text-gray-400"> ${character.created}</p>
+            <p class="font-sm text-gray-400">Last Known Location:</p>
+            <p class="mb-3 font-normal text-white dark:text-gray-400">${character.location.name}</p>
+            <p class="font-sm text-gray-400">First seen in:</p>
+            <p class="mb-3 font-normal text-white dark:text-gray-400">${character.created}</p>
         </div>
     `;
 
     return card;
 }
-
 
 function displayCharacters() {
     const characterContainer = document.getElementById('character-container');
@@ -67,5 +66,11 @@ document.getElementById('next-button').addEventListener('click', () => {
     loadCharacters(currentPage);
 });
 
+function getRandomPageNumber(maxPages) {
+    return Math.floor(Math.random() * maxPages) + 1;
+}
 
-loadCharacters();
+
+const maxPages = 42;
+const randomPage = getRandomPageNumber(maxPages);
+loadCharacters(randomPage);

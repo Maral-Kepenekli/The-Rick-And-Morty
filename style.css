@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-#svg-logo {}
 
-/*#hero-section {
-    background-image: url('./hero-image.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 80%;
-}
 
-#character-section {}
-*/
 ::selection {
     color: rgb(255, 152, 0);
     background: rgb(32, 35, 41);
