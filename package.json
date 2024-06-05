@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "build": "npx tailwindcss build dist/output.css -o docs/css/style.css",
+    "build": "npx tailwindcss build dist/input.css -o docs/css/style.css -o dist/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
