@@ -1,11 +1,15 @@
 module.exports = {
-  content: ["./docs/**/*.{html,js}"],
+  purge: ['./docs/**/*.html,js'],
+  darkMode: false,
   theme: {
     extend: {
       backgroundImage: {
         'hero-image': "url('../assets/hero-image.svg')",
-      }
+      },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 }
