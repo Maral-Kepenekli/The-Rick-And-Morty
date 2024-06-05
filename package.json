@@ -2,9 +2,11 @@
   "name": "the-rick-and-morty-api",
   "version": "1.0.0",
   "main": "script.js",
+  "homepage": "https://maral-kepenekli.github.io/The-Rick-And-Morty/",
   "scripts": {
-    "build": "npx tailwindcss build dist/input.css -o docs/css/style.css -o dist/output.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss build dist/input.css -o docs/css/style.css -o docs/css/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -D build",
   },
   "keywords": [],
   "author": "",
