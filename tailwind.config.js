@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./doc/**/*.{html,js}"],
+  content: ["./docs/**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
